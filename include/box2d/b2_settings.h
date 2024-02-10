@@ -72,10 +72,12 @@ struct B2_API b2FixtureUserData
 	b2FixtureUserData()
 	{
 		pointer = 0;
+		uuid = 0;
 	}
 
 	/// For legacy compatibility
 	uintptr_t pointer;
+	uint64_t uuid;
 };
 
 /// You can define this to inject whatever data you want in b2Joint
